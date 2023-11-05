@@ -10,7 +10,7 @@ let fullName = (firstName + ' ' + lastName);
 console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber = 7
+let luckyNumber = 17;
 console.log(luckyNumber);
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -29,7 +29,7 @@ let food = 'chips';
 console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 7;
+let pets = 1;
 console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 4;
@@ -89,7 +89,14 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-
+let mostPets = '';
+if(pets >= friendsPets){
+  mostPets = pets
+}
+else if(pets <= friendsPets){
+  mostPets = friendsPets
+}
+console.log(mostPets)
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
