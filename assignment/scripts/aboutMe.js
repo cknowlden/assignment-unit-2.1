@@ -29,7 +29,7 @@ let food = 'chips';
 console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 1;
+let pets = 5;
 console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 4;
@@ -89,14 +89,16 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+
 let mostPets;
 if(pets >= friendsPets){
-  mostPets = pets
+  mostPets = pets;
 }
 else if(pets <= friendsPets){
-  mostPets = friendsPets
+ mostPets = friendsPets;
 }
-console.log(mostPets);
+console.log('The most amount of pets is', mostPets);
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -119,7 +121,7 @@ switch(luckyNumber){
   default:
     alert('Luck is what happens when preparation meets opportunity')
 }
-console.log(luckyResult)
+console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 adventurous === true? (result = 'Adventures are great!'):(result = 'How about we stay home');
 console.log(result);
