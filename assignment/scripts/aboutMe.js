@@ -10,7 +10,7 @@ let fullName = (firstName + ' ' + lastName);
 console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber = 17;
+let luckyNumber = 5;
 console.log(luckyNumber);
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -52,12 +52,12 @@ if(adventurous === true){
     result = 'How about we stay home';
   }
   console.log(result);
-// 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
+// 13 - Create a variable called `diceRoll` and set it to the value of "Try again later."
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceRoll = 'Try again later';
+let diceRoll = 'Try again later.';
 if(luckyNumber === 2 && adventurous === true){
   diceRoll = 'Roll the dice!';
 }
@@ -105,7 +105,21 @@ console.log(mostPets)
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-
+let luckyResult = ''
+switch(luckyNumber){
+  case 1:
+    alert('First is the worst');
+    break;
+  case 2:
+    alert('Second is the best');
+    break;
+  case 3:
+    alert('Third is the one with the polka dot dress');
+    break;
+  default:
+    alert('Luck is what happens when preparation meets opportunity')
+}
+console.log(luckyResult)
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
 
